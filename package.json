@@ -1,0 +1,51 @@
+{
+  "name": "juke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/main.js",
+  "scripts": {
+    "start": "webpack -w & nodemon --watch server -e js,html server/main.js",
+    "test": "./node_modules/.bin/mocha server/**/*.test.js --reporter spec",
+    "test:player": "node_modules/.bin/testem",
+    "seed": "node ./bin/seed"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.12.0",
+    "bootstrap": "^3.3.5",
+    "chalk": "^1.0.0",
+    "commander": "^2.9.0",
+    "express": "^4.12.0",
+    "fs-misc": "^2.0.0",
+    "itunes-library-stream": "^0.0.0",
+    "lodash": "^4.15.0",
+    "lyric-get": "^1.0.3",
+    "mime": "^1.3.4",
+    "music-metadata": "^3.5.2",
+    "node-status": "^0.1.7",
+    "nodemon": "^1.3.7",
+    "pg": "^6.1.0",
+    "pg-hstore": "^2.3.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-router-dom": "^4.3.1",
+    "request": "^2.74.0",
+    "sequelize": "^4.4.0",
+    "serve-favicon": "^2.2.0",
+    "userhome": "^1.0.0",
+    "volleyball": "^1.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "chai": "3.5.0",
+    "chai-spies": "0.7.1",
+    "mocha": "^2.5.1",
+    "testem": "1.2.2",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
+}
